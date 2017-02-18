@@ -10,7 +10,7 @@
 			Menu
 		</h1>
 		<hr>
-		<form action="lista.php" method="get">
+		<form action="lista.php" method="post">
 			<ol id="list">
 				<li class="meal">
 					<h2><i>
@@ -22,27 +22,27 @@
 					</h3>
 					<ul>
 						<li>
-							<input type="checkbox" name="maka" value="Mąka">
+							<input type="checkbox" name="nalesniki[]" value="Mąka">
 							mąka
 						</li>
 						<li>
-							<input type="checkbox" name="jaja" value="Jaja">
+							<input type="checkbox" name="nalesniki[]" value="Jaja">
 							jajko
 						</li>
 						<li>
-							<input type="checkbox" name="mleko" value="Mleko">
+							<input type="checkbox" name="nalesniki[]" value="Mleko">
 							mleko
 						</li>
 						<li>
-							<input type="checkbox" name="olej" value="Olej">
+							<input type="checkbox" name="nalesniki[]" value="Olej">
 							olej
 						</li>
 						<li>
-							<input type="checkbox" name="konfitura" value="Konfitura">
+							<input type="checkbox" name="nalesniki[]" value="Konfitura">
 							konfitura
 						</li>
 						<li>
-							<input type="checkbox" name="bitasmietana" value="Bita śmietana">
+							<input type="checkbox" name="nalesniki[]" value="Bita śmietana">
 							bita śmietana
 						</li>
 					</ul>
@@ -57,39 +57,39 @@
 					</h3>
 					<ul>
 						<li>
-							<input type="checkbox" name="filetzkurczaka" value="Filet z kurczaka">
+							<input type="checkbox" name="risotto[]" value="Filet z kurczaka">
 							filet z kurczaka
 						</li>
 						<li>
-							<input type="checkbox" name="cukinia" value="Cukinia">
+							<input type="checkbox" name="risotto[]" value="Cukinia">
 							cukinia
 						</li>
 						<li>
-							<input type="checkbox" name="por" value="Por">
+							<input type="checkbox" name="risotto[]" value="Por">
 							por
 						</li>
 						<li>
-							<input type="checkbox" name="mlodacebulka" value="Młoda cebulka">
+							<input type="checkbox" name="risotto[]" value="Młoda cebulka">
 							młoda cebulka
 						</li>
 						<li>
-							<input type="checkbox" name="smietana12" value="Śmietana 12%">
+							<input type="checkbox" name="risotto[]" value="Śmietana 12%">
 							śmietana 12%
 						</li>
 						<li>
-							<input type="checkbox" name="bialewino" value="Białe wino">
+							<input type="checkbox" name="risotto[]" value="Białe wino">
 							białe wino półwytrawne
 						</li>
 						<li>
-							<input type="checkbox" name="ryz" value="Ryż">
+							<input type="checkbox" name="risotto[]" value="Ryż">
 							ryż
 						</li>
 						<li>
-							<input type="checkbox" name="czosnek" value="Czosnek">
+							<input type="checkbox" name="risotto[]" value="Czosnek">
 							czosnek
 						</li>
 						<li>
-							<input type="checkbox" name="sol" value="Sól">
+							<input type="checkbox" name="risotto[]" value="Sól">
 							sól
 						</li>
 					</ul>
@@ -104,31 +104,31 @@
 					</h3>
 					<ul>
 						<li>
-							<input type="checkbox" name="wolowinakostka" value="Wołowina pokrojona w kostkę">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Wołowina pokrojona w kostkę">
 							wołowina pokrojona w kostkę
 						</li>
 						<li>
-							<input type="checkbox" name="sossojowy" value="Søs sojowy">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Søs sojowy">
 							sos sojowy
 						</li>
 						<li>
-							<input type="checkbox" name="cukierbrazowy" value="Cukier brązowy">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Cukier brązowy">
 							cukier brązowy
 						</li>
 						<li>
-							<input type="checkbox" name="makarontagliatelle" value="Makaron tagliatelle">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Makaron tagliatelle">
 							makaron tagliatelle
 						</li>
 						<li>
-							<input type="checkbox" name="por" value="Por">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Por">
 							por
 						</li>
 						<li>
-							<input type="checkbox" name="czosnek" value="Czosnek">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Czosnek">
 							czosnek
 						</li>
 						<li>
-							<input type="checkbox" name="maslo" value="Masło">
+							<input type="checkbox" name="wolowinawsosiesojowym[]" value="Masło">
 							masło
 						</li>
 					</ul>
@@ -143,39 +143,39 @@
 					</h3>
 					<ul>
 						<li>
-							<input type="checkbox" name="miesomielone" value="Mięso mielone">
+							<input type="checkbox" name="chilliconcarne[]" value="Mięso mielone">
 							mięso mielone
 						</li>
 						<li>
-							<input type="checkbox" name="ryz" value="Ryż">
+							<input type="checkbox" name="chilliconcarne[]" value="Ryż">
 							ryż
 						</li>
 						<li>
-							<input type="checkbox" name="cebula" value="Cebula">
+							<input type="checkbox" name="chilliconcarne[]" value="Cebula">
 							cebula
 						</li>
 						<li>
-							<input type="checkbox" name="2puszkikrojonychpomidorów" value="2 puszki krojonych pomidorów">
+							<input type="checkbox" name="chilliconcarne[]" value="2 puszki krojonych pomidorów">
 							2 puszki krojonych pomidorów
 						</li>
 						<li>
-							<input type="checkbox" name="1puszkaczerwonejfasoli" value="1 puszka czerwonej fasoli">
+							<input type="checkbox" name="chilliconcarne[]" value="1 puszka czerwonej fasoli">
 							1 puszka czerwonej fasoli
 						</li>
 						<li>
-							<input type="checkbox" name="przyprawachilliconcarne" value="Przyprawa chilli con carne">
+							<input type="checkbox" name="chilliconcarne[]" value="Przyprawa chilli con carne">
 							przyprawa chilli con carne
 						</li>
 						<li>
-							<input type="checkbox" name="pieprz" value="Pieprz">
+							<input type="checkbox" name="chilliconcarne[]" value="Pieprz">
 							pieprz
 						</li>
 						<li>
-							<input type="checkbox" name="sol" value="Sól">
+							<input type="checkbox" name="chilliconcarne[]" value="Sól">
 							sól
 						</li>
 						<li>
-							<input type="checkbox" name="smietana12" value="Śmietana 12%">
+							<input type="checkbox" name="chilliconcarne[]" value="Śmietana 12%">
 							śmietana 12%
 						</li>
 					</ul>
@@ -190,35 +190,35 @@
 					</h3>
 					<ul>
 						<li>
-							<input type="checkbox" name="udkakurczaka" value="Udka kurczaka">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Udka kurczaka">
 							udka kurczaka
 						</li>
 						<li>
-							<input type="checkbox" name="musztardafrancuzka" value="Musztarda francuzka">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Musztarda francuzka">
 							musztarda francuzka
 						</li>
 						<li>
-							<input type="checkbox" name="musztardasarepska" value="Musztarda sarepska">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Musztarda sarepska">
 							musztarda sarepska
 						</li>
 						<li>
-							<input type="checkbox" name="miod" value="Miód">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Miód">
 							miód
 						</li>
 						<li>
-							<input type="checkbox" name="ocetbialy" value="Ocet biały">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Ocet biały">
 							ocet biały
 						</li>
 						<li>
-							<input type="checkbox" name="pieprz" value="Pieprz">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Pieprz">
 							pieprz
 						</li>
 						<li>
-							<input type="checkbox" name="sól" value="Sól">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Sól">
 							sól
 						</li>
 						<li>
-							<input type="checkbox" name="ziemniaki" value="Ziemniaki">
+							<input type="checkbox" name="kurczakwsosiemusztardowomiodowym[]" value="Ziemniaki">
 							zmieniaki
 						</li>
 					</ul>
@@ -233,19 +233,19 @@
 					</h3>
 					<ul>
 						<li>
-							<input type="checkbox" name="przecierpomidorowy" value="Przecier pomidorowy">
+							<input type="checkbox" name="zupapomidorowa[]" value="Przecier pomidorowy">
 							przecier pomidorowy
 						</li>
 						<li>
-							<input type="checkbox" name="bulionwkostkach" value="Bulion w kostkach">
+							<input type="checkbox" name="zupapomidorowa[]" value="Bulion w kostkach">
 							bulion w kostkach
 						</li>
 						<li>
-							<input type="checkbox" name="smietana18" value="Śmietana 18%">
+							<input type="checkbox" name="zupapomidorowa[]" value="Śmietana 18%">
 							śmietana 18%
 						</li>
 						<li>
-							<input type="checkbox" name="makaronswiderki" value="Makaron świderki">
+							<input type="checkbox" name="zupapomidorowa[]" value="Makaron świderki">
 							makaron świderki
 						</li>
 					</ul>
