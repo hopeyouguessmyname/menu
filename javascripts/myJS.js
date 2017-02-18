@@ -1,18 +1,13 @@
-function checkIngredients(formNo, check) 
+function checkIngredients(node, check) 
 {
-	var x = document.forms[formNo];
-	if(check == true)
+	var i;
+	var ingredient = node.getElementsByTagName("ul").item(0).childNodes;
+
+	for (i = 0; i < ingredient.length; i++) 
 	{
-		for (i = 0; i < x.length; i++)
+		if(ingredient[i].nodeName == "LI")
 		{
-		    x.elements[i].checked = true;
-		}
-	}
-	else
-	{
-		for (i = 0; i < x.length; i++)
-		{
-		    x.elements[i].checked = false;
+			ingredient[i].getElementsByTagName("input").item(0).checked = check;
 		}
 	}
 }
@@ -21,26 +16,30 @@ function checkIngredients(formNo, check)
 function findMeal(formNo) 
 {
 	var i, j;
-	var y = document.body.childNodes;
-	
-	for (i = 0; i < y.length; i++) 
+	var x = document.body.childNodes;
+	for (i = 0; i < x.length; i++) 
 	{
-		if(y[i].nodeName == "OL")
+		if(x[i].nodeName == "FORM")
 		{
-			var z = y[i].childNodes;
-			for (j = 0; j < z.length; j++)
+			var count = 0;
+			var list = x[i].getElementsByTagName("ol").item(0).childNodes;
+			for(j = 0; j < list.length; j++)
 			{
-				if(z[j].nodeName == "LI")
+				if(list[j].nodeName == "LI")
 				{
-					var v = z[j].getElementsByTagName("h2").item(0).getElementsByTagName("i").item(0).getElementsByTagName("input").item(0);
-					if(v.checked == true)
+					if(count == formNo)
 					{
-						checkIngredients((j-1)/2, true);
+						var meal = list[j].getElementsByTagName("h2").item(0).getElementsByTagName("i").item(0).getElementsByTagName("input").item(0);
+						if(meal.checked == true)
+						{
+							checkIngredients(list[j], true);
+						}
+						else
+						{
+							checkIngredients(list[j], false);
+						}
 					}
-					else
-					{
-						checkIngredients((j-1)/2, false);
-					}
+					count++;
 				}
 			}
 		}
