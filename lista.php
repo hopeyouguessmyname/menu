@@ -5,7 +5,11 @@
 	 	</title>
  	</head>
  	<body>
- 		<p>
+ 		<h1>
+			Lista zakupów
+		</h1>
+		<hr>
+ 		<ol>
 			<?php 
 				if(isset($_POST['nalesniki']))
 				{
@@ -15,7 +19,7 @@
 						$N = count($nalesniki);
 						for($i=0; $i < $N; $i++)
 						{
-							echo($nalesniki[$i] . "<br>");
+							echo("<li>" . $nalesniki[$i] . "</li>");
 						}
 					}
 				}
@@ -28,7 +32,7 @@
 						$N = count($risotto);
 						for($i=0; $i < $N; $i++)
 						{
-							echo($risotto[$i] . "<br>");
+							echo("<li>" . $risotto[$i] . "</li>");
 						}
 					}
 				}
@@ -41,7 +45,7 @@
 						$N = count($wolowinawsosiesojowym);
 						for($i=0; $i < $N; $i++)
 						{
-							echo($wolowinawsosiesojowym[$i] . "<br>");
+							echo("<li>" . $wolowinawsosiesojowym[$i] . "</li>");
 						}
 					}
 				}
@@ -54,7 +58,7 @@
 						$N = count($chilliconcarne);
 						for($i=0; $i < $N; $i++)
 						{
-							echo($chilliconcarne[$i] . "<br>");
+							echo("<li>" . $chilliconcarne[$i] . "</li>");
 						}
 					}
 				}
@@ -67,7 +71,7 @@
 						$N = count($kurczakwsosiemusztardowomiodowym);
 						for($i=0; $i < $N; $i++)
 						{
-							echo($kurczakwsosiemusztardowomiodowym[$i] . "<br>");
+							echo("<li>" . $kurczakwsosiemusztardowomiodowym[$i] . "</li>");
 						}
 					}
 				}
@@ -80,11 +84,11 @@
 						$N = count($zupapomidorowa);
 						for($i=0; $i < $N; $i++)
 						{
-							echo($zupapomidorowa[$i] . "<br>");
+							echo("<li>" . $zupapomidorowa[$i] . "</li>");
 						}
 					}
 				}
 			?>	
- 		</p>
+		</ol>
 	</body>
 </html>
