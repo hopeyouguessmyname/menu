@@ -106,7 +106,7 @@
 					Składniki
 				</h3>
 				<ul>
-					<form>
+					<form action="lista.php" method="get">
 						<li>
 							<input type="checkbox" name="wolowinakostka" value="Wołowina pokrojona w kostkę">
 							wołowina pokrojona w kostkę
@@ -131,10 +131,14 @@
 							<input type="checkbox" name="smietana12" value="Śmietana 12%">
 							śmietana 12%
 						</li>
+						<input type="submit">
 					</form>
 				</ul>
 			</li>
 		</ol>
 		<hr>
+		<button type="submit" formaction="lista.php">
+			Send
+		</button>
 	</body>
 </html>
