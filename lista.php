@@ -1,8 +1,20 @@
 <html>
- <head>
-  <title>PHP Test</title>
- </head>
- <body>
- <?php echo '<p>Hello World</p>'; ?> 
- </body>
+	<head>
+	 	<title>
+	 		Lista zakupów
+	 	</title>
+ 	</head>
+ 	<body>
+ 		<ol>
+ 			<li>
+ 				<?php echo '<p>Hellllllllo World</p>'; ?>	
+ 			</li>
+ 			<li>
+ 				<?php echo '<p>Hellllllllo World</p>'; ?>
+ 			</li>
+ 			<li>
+ 				<?php echo '<p>Hellllllllo World</p>'; ?>
+ 			</li>
+ 		</ol> 
+	</body>
 </html>
