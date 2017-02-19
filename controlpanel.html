@@ -1,0 +1,49 @@
+<html>
+	<head>
+	 	<title>
+	 		Panel sterowania
+	 	</title>
+	 	<script src="javascripts/myJS.js" type="text/javascript"></script>
+	 	<link rel="stylesheet" type="text/css" href="style.css">
+ 	</head>
+ 	<body>
+ 		<h1>
+			Panel sterowania
+		</h1>
+		<hr>
+		<p>
+			Dodawanie dań
+		</p>
+		<table>
+			<form>
+				<tr>
+					<td>
+						Danie:
+					</td>
+					<td>
+						<input type="text" name="meal">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Składniki:
+					</td>
+					<td id="lista">
+						<input type="text" name="01" class="ingredients" />
+						<input type="text" name="02" class="ingredients" />
+						<input type="text" name="03" class="ingredients" />
+						<input type="text" name="04" class="ingredients" />
+						<input type="text" name="05" class="ingredients" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						<button onclick="dodaj_element('lista');" type="button">Dodaj składnik</button>
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>

@@ -45,3 +45,14 @@ function findMeal(formNo)
 		}
 	}
 }
+
+
+function dodaj_element(kontener)
+{
+	var znacznik = document.createElement('input');
+	znacznik.setAttribute('type', 'text');
+	znacznik.setAttribute('name', '99');
+	znacznik.className = 'ingredients';
+	var kontener = document.getElementById(kontener);
+	kontener.appendChild(znacznik);
+}
